@@ -1,0 +1,50 @@
+<!-16.03.25 Łapacz-!>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wewnętrzny arkusz stylów.</h1>
+    <ol>
+        <li><h1>gdzie jest wstawiany</h1>Wewnętrzny arkusz stylów wstawiany jest zawsze w części nagłówkowej dokumentu, pomiędzy znacznikami &lt;head&gt; a &lt;/head&gt;.</li>
+
+        <li><h1>składnia teoretyczna (w ramce, konieczne wcięcia)</h1>Składnia wewnętrznego arkusza stylów:<br><textarea rows="13" cols="70"><head>
+    (...)
+    <style type="text/css">
+        /* <![CDATA[ */
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+        (...)
+        /* ]]> */
+    </style>
+    (...)
+</head></textarea></li>
+
+        <li><h1>jakie mogą być selektory</h1>Selektorem może być praktycznie dowolny znacznik HTML, np.: &lt;p&gt; (akapit) &lt;h1&gt; (nagłówek) &lt;td&gt; (komórka tabeli), itd.</li>
+
+        <li><h1>jakie mogą być cechy i wartości</h1>Cechy to właściwości, które chcemy zmienić w danym elemencie HTML, np.:<br>
+
+color (kolor tekstu),
+font-size (rozmiar czcionki),
+background-color (kolor tła),
+margin (margines),
+padding (odstęp wewnętrzny)<br>
+Wartości to dokładne przypisane wartości do tych cech, np.:<br>
+
+color: red;
+font-size: 16px;
+background-color: #ffffff;
+margin: 10px;
+padding: 5px;.</li>
+
+
+    </ol>
+</body>
+</html>

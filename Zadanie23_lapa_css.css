@@ -1,0 +1,40 @@
+p#pogrubienie_lapacz {
+    font-size: 31px;
+    font-weight: bold;
+    color: #835ED0;
+}
+
+p#pochylona_lapacz {
+    font-size: 36pt;
+    font-style: italic;
+    color: #E7C26C;
+}
+
+p#index_gorny_lapacz {
+    font-size: 1.1cm;
+    vertical-align: super;
+    color: #97901C;
+}
+
+p#index_dolny_lapacz {
+    font-size: 1.7cm;
+    vertical-align: sub;
+    color: rgb(20%, 96%, 89%);
+}
+
+p#mono_lapacz {
+    font-size: 41px;
+    font-family: monospace;
+    color: #17E06C;
+}
+
+p#powiekszenie_lapacz {
+    font-size: 60pt;
+    color: #51409E;
+}
+
+p#pomniejszenie_lapacz {
+    font-size: 10pt;
+    color: rgb(71%, 64%, 23%);
+}
+}

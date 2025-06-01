@@ -1,0 +1,115 @@
+<!-16.03.25 Łapacz-!>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania CSS do strony WWW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #eef2f3;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #2c3e50;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sposoby podłączania CSS do strony WWW</h2>
+
+    <table>
+        <tr>
+            <th>1. Zewnętrzny arkusz stylów</th>
+        </tr>
+        <tr>
+            <td>
+Ta metoda polega na załadowaniu pliku CSS, który jest zapisany w osobnym pliku. To pozwala na wielokrotne użycie tego samego arkusza stylów w wielu stronach.<br>
+                <textarea rows="5" cols="40">
+&lt;head&gt;<br>
+    &lt;link rel="stylesheet" href="style.css"&gt;<br>
+&lt;/head&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>2. Styl lokalny</th>
+        </tr>
+        <tr>
+            <td>
+Styl lokalny pozwala na dodanie stylów bezpośrednio do pojedynczego elementu HTML za pomocą atrybutu `style`. Jest to szybka metoda, ale nie jest zalecana do większych projektów.<br>
+                <textarea rows="4" cols="40">
+&lt;selektor style="color: red; font-size: 20px"&gt;Tekst&lt;/selektor&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>3. Wewnętrzny arkusz stylów</th>
+        </tr>
+        <tr>
+            <td>
+Wewnętrzny arkusz stylów umożliwia dodanie CSS bezpośrednio do sekcji `<head>` w obrębie pliku HTML. Stosuje się go do stylizacji jednej strony, ale nie jest dobrym rozwiązaniem przy dużych projektach.<br>
+                <textarea rows="7" cols="40">
+&lt;head&gt;<br>
+    &lt;style&gt;<br>
+        selektor { color: red; font-size: 20px; }<br>
+    &lt;/style&gt;<br>
+&lt;/head&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>4. Alternatywny arkusz stylów</th>
+        </tr>
+        <tr>
+            <td>
+ Alternatywne arkusze stylów pozwalają na zaproponowanie użytkownikowi różnych wersji stylów do wyboru. Można przełączać między nimi, np. na podstawie preferencji użytkownika.<br>
+                <textarea rows="7" cols="40">
+&lt;head&gt;<br>
+    &lt;link rel="stylesheet" href="style.css"&gt;<br>
+    &lt;link rel="alternate stylesheet" href="style1.css"&gt;<br>
+&lt;/head&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>5. Import arkusza stylów</th>
+        </tr>
+        <tr>
+            <td>
+Za pomocą dyrektywy `@import` można zaimportować zewnętrzny plik CSS do wewnętrznego arkusza stylów. Może to być przydatne w przypadku dużych projektów, gdzie stylizacja jest podzielona na wiele plików.<br>
+                <textarea rows="4" cols="40">
+&lt;style&gt;<br>
+    @import url('style.css');<br>
+&lt;/style&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

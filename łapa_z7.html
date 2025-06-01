@@ -1,0 +1,29 @@
+<!-16.03.25 Łapacz-!>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opis styl lokalny, liniowy, linijkowy.</h1>
+    <ol>
+        <li><h1>Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</h1>Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi strony. Element, który będzie formatowany, jest określany przez słowo kluczowe "selektor". Selektorem może być dowolny znacznik HTML, na przykład &lt;p&gt;, &lt;h1&gt;, &lt;td&gt; itd. Formatowanie stosuje się tylko do tego jednego elementu, w którym znajduje się zapisany styl.</li>
+
+        <li><h1>Składnia teoretyczna (z użyciem ramki otaczającej – może być tabela o jednej komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak, aby instrukcja CSS nie wykonywała się, a tylko wyświetlała wewnątrz ramki [&nbsp; spacja niełamana])</h1>Składnia teoretyczna stylu lokalnego wygląda następująco: &lt;selektor style="cecha1: wartość1; cecha2: wartość2...">treść bloku&lt;/selektor&gt; W tym przypadku selektor to element HTML, który chcemy sformatować, a style to atrybut, w którym określamy cechy (właściwości) stylu i ich wartości.</li>
+
+        <li><h1>Co może być selektorem</h1>Selektorem może być praktycznie dowolny znacznik HTML, taki jak &lt;p&gt;, &lt;h1&gt;, &lt;span&gt;, &lt;td&gt;, itp. To właśnie tym selektorem określamy, który element strony ma być sformatowany za pomocą stylu lokalnego.</li>
+
+        <li><h1>Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</h1>"Cechą" (ang. property) jest konkretna właściwość, którą chcemy zmienić w danym elemencie HTML. Na przykład, jeśli chcemy zmienić kolor tekstu, cechą będzie color. Wartością przypisaną tej cesze może być np. red, blue lub inna wartość. Średniki oddzielają różne cechy w jednej deklaracji stylu, pozwalając na przypisanie wielu właściwości jednemu selektorowi. Na przykład:
+color: red; font-size: 20px;</li>
+
+        <li><h1>Co wpisujemy jako "wartość" (w deklaracji stylu)?</h1>"Wartością" (ang. value) jest dokładna wartość, którą przypisujemy do danej cechy. Na przykład, dla cechy color wartością może być red, blue, green, a dla font-size wartością może być 12px, 20px, itd. Wartość zależy od cechy, której dotyczy.</li>
+
+    </ol>
+</body>
+</html>
